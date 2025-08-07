@@ -49,6 +49,7 @@ The loop then goes into a conditional statement matching the element variable to
 
 ### Update the file with the revised IP address list
 
+<img width="746" height="422" alt="image" src="https://github.com/user-attachments/assets/e2a9d9b9-2fee-4914-85b9-4dd0aad1a8ad" />
 
 
 The .join() was used to combine the elements from the iterable into a string. The “\n” parameter is used to instruct python to place each element on a new line.
