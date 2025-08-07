@@ -37,7 +37,7 @@ Ip_addresses.split() turns the data in the allow_list.txt file into seperate sub
 
 <img width="612" height="130" alt="image" src="https://github.com/user-attachments/assets/8d5e2657-6d7f-43d3-9f49-a80426a33cf9" />
 
-This is the start of the loop that will look for the variable(element) in the remove_list.
+Created new variable "remove_list" and input marked IPs. This is the start of the loop that will look for the variable(element) in the remove_list.
 
 
 ### Remove IP addresses found on remove list
@@ -49,23 +49,6 @@ The loop then goes into a conditional statement matching the element variable to
 
 ### Update the file with the revised IP address list
 
-import_file = "allow_list.txt"
-remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
-
-
-with open(import_file, "r") as file:
-      ip_addresses = file.read()
-
-ip_addresses = ip_addresses.split()
-
-for element in remove_list
-    if element in ip_addresses:
-        ip_addresses.remove(element)
-
-ip_addresses = "\n ".join(ip_addresses)    
-
-with open(import_file, "w") as file:
-      file.write(ip_addresses)
 
 
 The .join() was used to combine the elements from the iterable into a string. The “\n” parameter is used to instruct python to place each element on a new line.
